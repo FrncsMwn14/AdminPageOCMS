@@ -129,11 +129,11 @@
             <img src="seal.png" alt="Seal">
             <h1>LOGIN</h1>
             <p>STAFF</p>
-            <form onsubmit="redirectToDashboard(event)">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <a href="Admin.php">Not a staff? Click here for admin login</a>
-                <button type="submit">Sign In</button>
+            <form action="process.php" method="post">
+                <input type="text" name = "Usern" placeholder = "Username" required class = "form-control">
+                <input type="password" name = "Password" placeholder = "Password" required class = "form-control">
+                <a href="admin.php">Not a Staff? Click here for Admin login</a>
+                <button  class="btn" name="Login">Login</button>
             </form>
         </div>
     </div>
