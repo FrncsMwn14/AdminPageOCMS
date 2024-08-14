@@ -119,6 +119,7 @@
     </script>
 </head>
 <body>
+
     <div class="header">
         <img src="logo.png" alt="Logo"> 
         <h1>NUESTRA SEÑORA DE LA SOLEDAD PARISH</h1>
@@ -129,11 +130,11 @@
             <img src="seal.png" alt="Seal">
             <h1>LOGIN</h1>
             <p>ADMIN</p>
-            <form onsubmit="redirectToDashboard(event)">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
+            <form action="process.php" method="post">
+                <input type="text" name = "Usern" placeholder = "Username" required class = "form-control">
+                <input type="password" name = "Password" placeholder = "Password" required class = "form-control">
                 <a href="Staff.php">Not an admin? Click here for staff login</a>
-                <button type="submit">Sign In</button>
+                <button  class="btn" name="Login">Login</button>
             </form>
         </div>
     </div>

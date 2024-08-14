@@ -274,7 +274,7 @@
                 </div>
             </div>
             <div class="logout">
-                <a href="admin.php">Log out</a>
+     <a href="logout.php?logout">Logout</a>
             </div>
         </div>
         <div class="main-content">
